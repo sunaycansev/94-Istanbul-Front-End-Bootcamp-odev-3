@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation Ödev</title>
+  </head>
+
+  <body>
+    <form action="POST" id="form1" novalidate>
+      <h1>FORM VALIDATION ODEVI</h1>
+      <div class="form-body">
+        <div>
+          <label for="userName">Kullanıcı Adı :</label>
+          <input
+            type="text"
+            placeholder="Kullanıcı Adı"
+            required
+            name="userName"
+            id="userName"
+          />
+          <p class="non-visible" id="nameError">
+            <small class="error">Lütfen bu alanı doldurun</small>
+          </p>
+        </div>
+        <div>
+          <label for="password">Parola :</label>
+          <input
+            type="password"
+            placeholder="Şifre"
+            required
+            name="password"
+            id="userPassword"
+          />
+          <p class="non-visible" id="passwordError">
+            <small class="error">Lütfen bu alanı doldurun</small>
+          </p>
+        </div>
+        <div>
+          <label for="eMail">E-Mail :</label>
+          <input
+            type="email"
+            placeholder="E-mail"
+            required
+            name="eMail"
+            id="userMail"
+          />
+          <p class="non-visible" id="mailError">
+            <small class="error">Lütfen bu alanı doldurun</small>
+          </p>
+        </div>
+        <div>
+          <label for="confirm">Okudum,onaylıyorum</label>
+          <input type="checkbox" required name="confirm" id="userConfirm" />
+          <p class="non-visible" id="confirmError">
+            <small class="error">Lütfen bu alanı doldurun</small>
+          </p>
+        </div>
+        <div>
+          <button type="submit" id="submit">Gönder</button>
+        </div>
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
